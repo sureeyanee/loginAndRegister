@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="registerForm">
+        <div class="one">
+            <h1>Register</h1>
+        </div>
+        <div class="two">
+            <div class="two" action="javascript:void(0);" method="post">
+                First name:
+                <input type="text" name="First name" value="" placeholder="ชื่อ" id="name">
+                <br>
+                <br> Last name:
+                <input type="text" name="Last name" value="" placeholder="นามสกุล" id="last">
+                <br>
+                <br> Username :
+                <input type="text" name="Username" value="" placeholder="ชื่อเข้าใช้งาน" id="user">
+                <br>
+                <br> E-mail:
+                <input type="text" name="E-mail" value="" placeholder="@e-mail" id="mail">
+                <br>
+                <br> password
+                <input type="password" name="password" value="" placeholder="รหัสผ่าน" id="pass">
+                <br>
+                <br> Repeat password:
+                <input type="password" name="Repeat password" value="" placeholder="ยืนยันรหัสผ่าน" id="repast">
+                <br>
+                <br> gender:
+                <select class="" name="" id="gender">
+                    <option value="male">male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                <br>
+                <br> affiliation:
+                <br>
+                <br>
+                <textarea name="name" rows="8" cols="80" placeholder="ข้อมูลติดต่อ"></textarea>
+                <br>
+                <br>
+                <input type="checkbox" name="Remember Me" value=""> Remember Me
+                <br>
+                <br>
+                <input type="submit" name="" value="register" onclick="register()">
+                <input type="submit" name="" value="showregister" onclick="showregister()">
+                <br>
+                <br>
+                <input type="text" name="" value="" id="search">
+                <input type="submit" name="" value="search" id="myinput" placeholder="Search for name" onclick="test()">
+            </div>
+        </div>
+        <button onclick="goLogin()">login form</button>
+        <hr>
+        <div id="show-table">
+
+
+        </div>
+
+    </div>
+
+    <div id="loginForm" style="display:none">
+        <div class="one">
+            <h1>Login</h1>
+        </div>
+        <div>
+            <br> Username :
+            <input type="text" name="Username" value="" placeholder="ชื่อเข้าใช้งาน" id="userL">
+            <br>
+            <br> password
+            <input type="password" name="password" value="" placeholder="รหัสผ่าน" id="passL">
+            <br>
+            <input type="submit" name="" value="login" onclick="login()">
+        </div>
+        <button onclick="goRegister()">register form</button>
+    </div>
+    <script src="./js/script.js">
+
+    </script>
+
+
+
+</body>
+
+</html>
